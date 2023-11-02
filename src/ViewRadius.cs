@@ -1,3 +1,4 @@
+using DotLiquid;
 using Elements;
 using Elements.Geometry;
 using Elements.Geometry.Solids;
@@ -34,7 +35,7 @@ namespace ViewRadius
                 return outputs;
             }
             var allEnvelopes = envelopeModel.AllElementsOfType<Envelope>();
-            var allContextBuildings = contextBuildingsModel.AllElementsOfType<Mass>();
+            var allContextBuildings = contextBuildingsModel.AllElementsOfType<MeshElement>();
             if (!allEnvelopes.Any())
             {
                 outputs.Errors.Add("No envelopes in model.");
@@ -49,7 +50,21 @@ namespace ViewRadius
             var model = new Model();
             int rayCount = 170;
 
-            var allFaces = allContextBuildings.SelectMany(b => b.Representation.SolidOperations.Select(s => s.Solid.Faces));
+            var allTriangles = allContextBuildings.SelectMany(b => b.Mesh.Triangles);
+
+            var solidFaces = new List<Face>();
+
+            foreach (var face in allTriangles)
+            {
+                var poly = new Polygon(face.Vertices.Select(v => v.Position).ToList());
+
+                var solid = Solid.CreateLamina(poly);
+
+                solidFaces.AddRange(solid.Faces.Select(x => x.Value));
+            }
+
+            // model.AddElements(solidFaces.Select(f => new ModelCurve(f.Outer.ToPolygon())));
+
             var maxTotalScore = 0.0;
             var totalScore = 0.0;
             foreach (var envelope in envelopesAtHeight)
@@ -67,8 +82,10 @@ namespace ViewRadius
 
                 var maxCircle = new Circle(heightTransform.Origin, totalRadius);
 
+                var filteredFaces = filterFaces(solidFaces, maxCircle);
 
-                var filteredFaces = filterFaces(allFaces.SelectMany(f => f.Values).ToList(), maxCircle);
+                // FOR DEBUGGING
+                model.AddElements(filteredFaces.Select(f => new ModelCurve(f.Outer.ToPolygon())));
 
                 var rays = rayDirections.Select(i => new Ray(maxCircle.Center, i));
                 List<Vector3> finalIsovistPoints = new List<Vector3>();
