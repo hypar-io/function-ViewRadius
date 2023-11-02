@@ -11,7 +11,7 @@ namespace ViewRadius
     {
 
         public double Score { get; set; }
-        public Isovist(Mesh mesh) : base(mesh, new Material(new Color(0.6, 0.6, 0.6, 0.6), 0, 0, true, null, true, Guid.NewGuid(), "WhiteBaseMaterial"))
+        public Isovist(Mesh mesh) : base(mesh, null, new Material(new Color(0.6, 0.6, 0.6, 0.6), 0, 0, true, null, true, false, null, false, null, 0, false, Guid.NewGuid(), "WhiteBaseMaterial"))
         {
 
         }

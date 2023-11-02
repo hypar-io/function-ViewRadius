@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\antho\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\antho\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Fonts\Roboto-Medium.ttf" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Fonts\Roboto-Medium.ttf')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Fonts\Roboto-Medium.ttf</TargetPath>
+      <DestinationSubDirectory>Fonts\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Fonts\Roboto-Medium.ttf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\C.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\C.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\C.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\C.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\HSS.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\HSS.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\HSS.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\HSS.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\L.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\L.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\L.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\L.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\MC.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\MC.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\MC.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\MC.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\ST.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\ST.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\ST.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\ST.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\W.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\W.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\W.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\W.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\WT.csv" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\ProfileData\WT.csv')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>ProfileData\WT.csv</TargetPath>
+      <DestinationSubDirectory>ProfileData\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>ProfileData\WT.csv</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Textures\Checkerboard.png" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Textures\Checkerboard.png')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Textures\Checkerboard.png</TargetPath>
+      <DestinationSubDirectory>Textures\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Textures\Checkerboard.png</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Textures\UV.jpg" Condition="Exists('$(NuGetPackageRoot)hypar.elements\2.1.0\contentFiles\any\netstandard2.0\Textures\UV.jpg')">
+      <NuGetPackageId>Hypar.Elements</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Textures\UV.jpg</TargetPath>
+      <DestinationSubDirectory>Textures\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>Textures\UV.jpg</Link>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\antho\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
+  </PropertyGroup>
+</Project>

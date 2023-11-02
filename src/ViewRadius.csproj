@@ -1,12 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\dependencies\ViewRadius.Dependencies.csproj"/>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Hypar.Elements" Version="0.6.2"/>
-    <PackageReference Include="Hypar.Functions" Version="0.6.2"/>
+    <ProjectReference Include="..\dependencies\ViewRadius.Dependencies.csproj" />
   </ItemGroup>
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 </Project>

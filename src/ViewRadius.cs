@@ -19,25 +19,29 @@ namespace ViewRadius
         /// <returns>A ViewRadiusOutputs instance containing computed results and the model with any new elements.</returns>
         public static ViewRadiusOutputs Execute(Dictionary<string, Model> inputModels, ViewRadiusInputs input)
         {
+            var outputs = new ViewRadiusOutputs();
+
             inputModels.TryGetValue("Envelope", out Model envelopeModel);
             inputModels.TryGetValue("location", out Model contextBuildingsModel);
             if (envelopeModel == null)
             {
-                throw new Exception("Unable to find envelope model.");
+                outputs.Errors.Add("Unable to find envelope model.");
+                return outputs;
             }
             if (contextBuildingsModel == null)
             {
-                throw new Exception("Unable to find Location model.");
+                outputs.Errors.Add("Unable to find Location model.");
+                return outputs;
             }
             var allEnvelopes = envelopeModel.AllElementsOfType<Envelope>();
             var allContextBuildings = contextBuildingsModel.AllElementsOfType<Mass>();
             if (!allEnvelopes.Any())
             {
-                throw new Exception("No envelopes in model.");
+                outputs.Errors.Add("No envelopes in model.");
             }
             if (!allContextBuildings.Any())
             {
-                throw new Exception("No context buildings in model.");
+                outputs.Errors.Add("No context buildings in model.");
             }
             var height = input.Height;
             var envelopesAtHeight = allEnvelopes.Where(env => height > env.Elevation && height < env.Height + env.Elevation);
@@ -98,10 +102,10 @@ namespace ViewRadius
                 var isovistElement = new Isovist(mesh);
 
                 model.AddElement(isovistElement);
-            
+
             }
-            var outputs = new ViewRadiusOutputs((totalScore / maxTotalScore) * 100);
-            outputs.model = model;
+            outputs.ViewScore = (totalScore / maxTotalScore) * 100;
+            outputs.Model = model;
             return outputs;
 
 
