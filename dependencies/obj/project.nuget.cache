@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2l76AHCLgBnsCBQ4XH9Ezek+72xdTjxL7bW/1rt5pHDACeSSBvBi3aYHdbeIUj9HRfkq7Gdx/hmDai1jvV/DlA==",
+  "dgSpecHash": "HG5a1km1RIgRZfbY3rrjBIuHos4jhNkd0awSwHYJpHoGNYZhhXcDsShNXk9ZGEBmoqL17wD5iEztTGsFWHlmNw==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Hypar\\Functions\\function-ViewRadius\\dependencies\\ViewRadius.Dependencies.csproj",
+  "projectFilePath": "c:\\dev\\Hypar\\Functions\\function-ViewRadius\\dependencies\\ViewRadius.Dependencies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antho\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
     "C:\\Users\\antho\\.nuget\\packages\\amazon.lambda.serialization.json\\2.1.0\\amazon.lambda.serialization.json.2.1.0.nupkg.sha512",
